@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="text-center">Ingresar Serie</h1>
+    <br><br>
+
+    <div class="d-flex justify-content-center ">
+        <div class="card col-6">
+        <%= form_with model: @show, method: :post do |show| %>
+        <div class="border p-5 shadow ">
+                    <div class="mb-3">
+                        <%= show.label :name, "Nombre", class:"form-label" %>
+                        <%= show.text_field :name, class:"form-control" %>
+                    </div>
+                    <div class="mb-3">
+                        <%= show.label :synopsis, "Synopsis", class:"form-label" %>
+                        <%= show.text_area :synopsis, class:"form-control" %>
+                    </div>
+                    <div class="mb-5">
+                        <%= show.label :director, "Director", class:"form-label" %>
+                        <%= show.text_field :director, class:"form-control" %>
+                    </div>
+                    <div class="text-center">
+                        <%= show.submit "Enviar", class:"btn btn-dark" %>
+                    </div>
+                </div>
+        <% end %>
+        </div>
+    </div>
+    
+</div>

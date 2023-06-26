@@ -1,0 +1,40 @@
+<div class="container mx-auto mt-4">    
+  <div class="row">
+  
+    
+    <div class="col-md-4">
+        <%= link_to movies_index_path do %>
+            <div class="card" style="width: 18rem; height: 14rem">
+                <%= image_tag 'movie.jpg', class:"card-img-top h-75" %>
+                <div class="card-body">
+                    <h5 class="card-title">Películas</h5>
+                </div>
+            </div>
+        <% end %> 
+    </div>  
+  
+
+    
+    <div class="col-md-4 ">
+        <%= link_to shows_index_path do %>
+            <div class="card" style="width: 18rem; height: 14rem">
+                <%= image_tag 'show.jpg', class:"card-img-top h-75" %>
+                <div class="card-body">
+                    <h5 class="card-title">Series</h5>
+                </div>
+            </div>
+        <% end%>
+    </div> 
+       
+    <div class="col-md-4">
+        <%= link_to documentary_films_index_path do %>
+            <div class="card" style="width: 18rem; height: 14rem">
+                <%= image_tag 'documentary.png', class:"card-img-top h-75" %>
+                <div class="card-body">
+                    <h5 class="card-title">Documentales</h5>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+ 

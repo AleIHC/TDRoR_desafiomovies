@@ -1,0 +1,24 @@
+<div class="container mx-auto mt-4 mb-4">
+<h1>Lista de Documentales</h1>
+    <%= link_to "Agregar nuevo documental", documentary_films_new_path, class:"btn btn-dark" %>
+</div>
+
+   
+    <div class="row">
+        <% @documentary_films.each do |documentary_film| %>
+            <div class="col-md-3">
+                <div class="card my-2 border p-1 shadow" style="width: 18rem; height: 13rem">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= documentary_film.name %></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Director: <%= documentary_film.director %></h6>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-muted">Synopsis: </h6>
+                        <p class="card-text"><%= documentary_film.synopsis %></p>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+
+
